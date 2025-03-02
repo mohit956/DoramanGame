@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c758b4d767380c945814bd69c4a8b1de, type: 3}
+  m_Name: AirGun
+  m_EditorClassIdentifier: 
+  Name: Airgun
+  ID: 1
+  FireRate: 1
+  Bullet: {fileID: 1467118711762686620, guid: a84dd15a05535ea49bc4b68156e46cb9, type: 3}
+  Icon: {fileID: 0}
