@@ -1675,6 +1675,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78354c92e0cd0b548bd9739f531936a9, type: 2}
   SelectedGun: {fileID: 0}
   firebtn: {fileID: 382916397}
+  freeLookCamera: {fileID: 45131009}
 --- !u!4 &651826551
 Transform:
   m_ObjectHideFlags: 0

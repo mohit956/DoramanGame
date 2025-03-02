@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -25,9 +26,13 @@ public class GameManager : MonoBehaviour
 
     [Header("Scriptable")]
     public List<GunScriptable> gunsInfo;
-    [HideInInspector]public GunScriptable SelectedGun;
+    [HideInInspector] public GunScriptable SelectedGun;
     [Header("UI")]
     public GameObject firebtn;
+
+
+    [Header("Object Refrence")]
+    public CinemachineFreeLook freeLookCamera;
 
 
 
@@ -44,6 +49,15 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject); // Make sure the GameManager persists across scenes
 
-        SelectedGun=gunsInfo[1];
+        SelectedGun = gunsInfo[1];
+    }
+    private void Start()
+    {
+        if (IsAndroid)
+        {
+            freeLookCamera.m_XAxis.m_InputAxisName = ""; // Clear the input axis name
+            freeLookCamera.m_YAxis.m_InputAxisName = ""; // Clear the input axis name
+
+        }
     }
 }
